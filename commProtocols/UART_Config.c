@@ -1,0 +1,23 @@
+/*
+ * UART_Config.c
+ *
+ * Created: 2020-02-10 3:22:24 PM
+ *  Author: EbrahimOseif
+ */ 
+#include "UART_Config.h"
+
+#define F_CPU			16000000ul
+#define BAUD		    9600ul
+
+
+ST_USART_Config UART_Config = {
+	USART_ASYNCH,
+	USART_NORMAL_SPEED,
+	USART_TRANSMIT_ENABLE,
+	USART_RECIEVE_ENABLE,
+	USART_8_Bit_CHAR,
+	USART_EVEN_PARITY,
+	USART_1_STOPBIT,
+	// USART_RECIEVER_DISABLE,
+	//	 USART_TRANSMITER_DISABLE
+};
